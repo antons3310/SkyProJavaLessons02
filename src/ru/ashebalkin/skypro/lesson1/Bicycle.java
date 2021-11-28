@@ -6,4 +6,8 @@ public class Bicycle extends Vehicle {
         super(modelName, wheelsCount);
     }
 
+    @Override
+    public void service() {
+        super.service();
+    }
 }

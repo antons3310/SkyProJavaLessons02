@@ -1,10 +1,9 @@
 package ru.ashebalkin.skypro.lesson1;
 
-public interface ServiceStation {
-    void check(Bicycle[] bicycles);
+public class ServiceStation {
 
-    void check(Car[] cars);
-
-    void check(Truck[] trucks);
+    public void check(Vehicle vehicle) {
+        vehicle.service();
+    }
 
 }

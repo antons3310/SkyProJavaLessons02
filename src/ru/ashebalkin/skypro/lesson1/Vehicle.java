@@ -25,9 +25,14 @@ public abstract class Vehicle {
         this.wheelsCount = wheelsCount;
     }
 
+    public void service() {
+        System.out.println("Обслуживаем " + modelName);
+        for (int i = 0; i < wheelsCount; i++) {
+            updateTyre();
+        }
+    }
+
     public void updateTyre() {
         System.out.println("Меняем покрышку");
     }
-
-
 }
